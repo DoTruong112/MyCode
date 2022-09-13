@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('../ASM/img/Thiết\ kế\ không\ tên.png');
+        }
+
+        /* Phần header */
+        .container {
+            max-width: 960px;
+            margin: 0px auto;
+        }
+
+        .header {
+            background-color: rgb(19, 19, 19);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+
+        }
+
+        #logo {
+            padding: 5px 0px;
+        }
+
+        #logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .menuchinh {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menuchinh li {
+            position: relative;
+        }
+
+        .menuchinh li a {
+            color: whitesmoke;
+            display: block;
+            padding: 30px 20px;
+            text-decoration: none;
+            font-size: large;
+
+        }
+
+        .menuchinh li a:hover {
+            color: rgb(81, 153, 81);
+            font-weight: bold;
+        }
+
+        .menuchinh ul.menucon {
+            position: absolute;
+            background-color: rgb(19, 19, 19);
+            padding: 15px 0px;
+            list-style: none;
+            width: 200px;
+            border-top: 1px solid rgb(112, 100, 100);
+            display: none;
+        }
+
+        .menuchinh li:hover ul.menucon {
+            display: block;
+        }
+
+        .menuchinh ul.menucon a {
+            padding: 10px 15px;
+            border-bottom: 1px solid gainsboro;
+            font-family: Arial;
+        }
+
+        .menuchinh ul.menucon li:hover a {
+            border-bottom: 2px solid rgb(228, 135, 135);
+            color: rgb(81, 153, 81);
+        }
+
+        .menuchinh ul.menucon li:last-child a {
+            border: none;
+        }
+
+        /* Phần menu */
+        .noidung {
+            background-color: white;
+            width: 960px;
+            margin: 10px 10px;
+            font-size: larger;
+            padding: 10px 10px;
+            border-radius: 10px;
+            word-spacing: 2px;
+        }
+
+        .noidungsach3 img {
+            float: left;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            width: 300px;
+            height: auto;
+        }
+
+        /* Phần form */
+         .containerl {
+            width: 100%;
+            height: 100%;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        form {
+            width: 350px;
+            height: 400px;
+            background: transparent;
+        }
+        form h1 {
+            position: relative;
+            margin: 40px 0 30px;
+            padding-bottom: 12px;
+            width: fit-content;
+            font-size: 18px;
+            color: rgb(172, 172, 248);
+        }
+
+
+        form h1::before {
+            /* content: ""; */
+            position: absolute;
+             display: block;
+            width: 100px;
+            height: 5px;
+            background: rgb(172, 172, 248);
+            bottom: 0;
+        }
+        form button {
+            width: 100%;
+            height: 35px;
+            border: 2px solid rgb(172, 172, 248);
+
+        }
+        .form-field {
+            margin-bottom: 30px;
+        }
+        .form-field input {
+            width: 100%;
+            height: 45px;
+            padding-left: 30px;
+            border: none;
+            border-bottom: 2px solid rgb(172, 172, 248);
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            color: white;
+        }
+        /* Phần footer */
+        .footer {
+            background-image: url('../ASM/img/ảnh\ nền\ footer.jpg');
+            display: flex;
+        }
+
+        .footer li a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 30px 30px;
+            margin: 10px 5px;
+        }
+
+        .footer li a:hover {
+            color: rgb(113, 113, 194);
+        }
+
+        footer {
+
+            display: flex;
+            text-align: center;
+            height: auto;
+            font-size: x-large;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+            margin-bottom: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header class="container">
+            <a href="" id="logo">
+                <img src="img/photosmile.vn_-removebg-preview.png" alt=""></a>
+            <ul class="menuchinh">
+                <li><a href="asmgd1.html">TRANG CHỦ</a></li>
+                <li><a href="tranggioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="">THỂ LOẠI</a>
+                    <ul class="menucon">
+                        <li><a href="">Hài hước</a></li>
+                        <li><a href="">Châm ngôn</a></li>
+                        <li><a href="">Văn học</a></li>
+                        <li><a href="">Kinh tế</a></li>
+                        <li><a href="">Lịch sử</a></li>
+                    </ul>
+                </li>
+                <li><a href="tranglichsu.html">TỦ SÁCH</a></li>
+                <li><a href="">ĐĂNG NHẬP</a>
+                    <ul class="menucon">
+                        <li><a href="trangdanhnhap.html">Đăng nhập</a></li>
+                        <li><a href="trangdangki.html">Đăng kí</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="containerl">
+        <form action="">
+            <h1>ĐĂNG KÍ</h1>
+            <div class="form-field">
+                <input type="text" placeholder="Email của bạn">
+            </div>
+            <div class="form-field">
+                <input type="password" placeholder="Mật khẩu của bạn">
+            </div>
+            <div class="form-field">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+            </div>
+            <div class="button">
+                <button>ĐĂNG KÍ</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="footer">
+        <footer>
+            <ul>
+                <li><a href="">FACEBOOK</a></li>
+            </ul>
+            <ul>
+                <li><a href="">INSTAGRAM</a></li>
+            </ul>
+            <ul>
+                <li><a href="">LINKEDIN</a></li>
+            </ul>
+            <ul>
+                <li><a href="">PINTEREST</a></li>
+            </ul>
+            <ul>
+                <li><a href="">REDDIT</a></li>
+            </ul>
+            <ul>
+                <li><a href="">TWITTER</a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>

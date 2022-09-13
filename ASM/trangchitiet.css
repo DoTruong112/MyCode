@@ -1,0 +1,168 @@
+body {
+    background-image: url('../ASM/img/Thiết\ kế\ không\ tên.png');
+}
+
+/* Phần header */
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.header {
+    background-color: rgb(19, 19, 19);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+#logo {
+    padding: 5px 0px;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.menuchinh {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuchinh li {
+    position: relative;
+}
+
+.menuchinh li a {
+    color: whitesmoke;
+    display: block;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+.menuchinh li a:hover {
+    color: rgb(81, 153, 81);
+    font-weight: bold;
+}
+
+.menuchinh ul.menucon {
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border-top: 1px solid rgb(112, 100, 100);
+    display: none;
+}
+
+.menuchinh li:hover ul.menucon {
+    display: block;
+}
+
+.menuchinh ul.menucon a {
+    padding: 10px 15px;
+    border-bottom: 1px solid gainsboro;
+    font-family: Arial;
+}
+
+.menuchinh ul.menucon li:hover a {
+    border-bottom: 2px solid rgb(228, 135, 135);
+    color: rgb(81, 153, 81);
+}
+
+.menuchinh ul.menucon li:last-child a {
+    border: none;
+}
+/* Phần menu */
+.noidung{
+    background-color: white;
+    width: 960px;
+    margin: 10px 10px;
+    font-size: larger;
+    padding: 10px 10px;
+    border-radius: 10px;
+    word-spacing: 2px   ;
+}
+.noidungsach3 img{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: auto;
+}
+/* Phần aside */
+aside{
+    padding: 20px 20px;
+    min-height: 1200px;
+    width: 24%;
+    background-color: white;
+    border: whitesmoke;
+    float: right;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.aside img{
+    float: right;
+    width: auto;
+    height: 110px;
+}
+.textaside{
+    font-family: Arial;
+    font-size: medium;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.textaside a:hover{
+    color: rgb(81, 153, 81);
+}
+.a1{
+    padding-top: 20px;
+}
+.textaside a{
+    text-decoration: none;
+    color: black;
+}
+.khoiaside{
+    /* border: 2px double black; */
+    margin-bottom: 10px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid black;
+    
+}
+/* Phần footer */
+.footer{
+    background-image: url('../ASM/img/ảnh\ nền\ footer.jpg');
+    display: flex;
+ }
+ .footer li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 30px 30px;
+    margin: 10px 5px;
+ }
+ .footer li a:hover{
+    color: rgb(113, 113, 194);
+ }
+ footer{
+    
+    display: flex;
+    text-align: center;
+    height: auto;
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: whitesmoke;
+ }
+ 
