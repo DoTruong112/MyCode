@@ -1,0 +1,3 @@
+MaSach;TuaSach;TacGia;NamXB;NhaXB;SoTrang;DonGia;ISBN
+1;Mo Coi;To Hoai;2002;Kim Dong;315;155000.0;203
+2;Kinh Doang;Thanh Dat;2019;Dong Ngo;211;102000.0;204
